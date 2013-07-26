@@ -1,4 +1,4 @@
-CC = gcc
+CC = clang
 
 CFLAGS = -Wall -W -ansi -pedantic -std=c99
 LFLAGS =
