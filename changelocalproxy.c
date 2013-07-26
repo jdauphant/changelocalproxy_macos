@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/wait.h>
+#include <string.h>
 
 void launchNetworkSetup(char * argv[])
 {
@@ -9,9 +10,11 @@ void launchNetworkSetup(char * argv[])
   	int status, died;
     switch(pid=fork()){
     	case -1: puts("Can't fork");
+	break;
      	case 0 : 
      		execv("/usr/sbin/networksetup",argv);
             exit(0); 
+	break;
      	default: died= wait(&status);
     }
 }
