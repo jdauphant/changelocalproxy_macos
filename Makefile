@@ -1,6 +1,6 @@
 CC = clang
 
-CFLAGS = -Wall -W -ansi -pedantic -std=c99 -mmacosx-version-min=10.6 -O2
+CFLAGS = -Wall -W -ansi -pedantic -std=c99 -mmacosx-version-min=10.5 -O2
 LFLAGS =
 
 EXEC=changelocalproxy
